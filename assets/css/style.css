@@ -61,8 +61,13 @@ nav ul li a:hover {
     border-radius: 20px;
 }
 #goUp{
-    border: 3px solid #fff;
-    z-index: 200000;
+    background-color: #ffffff;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        opacity: 0;
+        width: 100px;
+        height: 100px;
 }
 /*-----------------Carousel base class----------*/
 
