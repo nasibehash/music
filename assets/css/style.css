@@ -38,6 +38,10 @@ nav {
     text-align: right !important;
     /* margin-top: 20px; */
 }
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+    background: rgba(0,0,0,0.4);
+ }
 navbar-toggler-icon{
     float: left;
 }
@@ -55,6 +59,10 @@ nav ul li a:hover {
     background-color: #fff;
     opacity: 0.3;
     border-radius: 20px;
+}
+#goUp{
+    border: 3px solid #fff;
+    z-index: 200000;
 }
 /*-----------------Carousel base class----------*/
 
@@ -242,14 +250,6 @@ ul.footer-navigation li a{
     width: 80px;
     height: 80px;
     float: left;
+    
 }
 
-
-
-
-
-
-
-.navbar.transparent.navbar-inverse .navbar-inner {
-   background: rgba(0,0,0,0.4);
-}
