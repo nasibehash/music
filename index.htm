@@ -34,7 +34,7 @@
 
   <!-- Fixed navbar -->
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg transparent fixed-top" id="navId">
+  <nav class="navbar navbar-expand-lg transparent fixed-top" id="topNav">
     <div class="container">
       <!--    <a class="navbar-brand" href="#">Start Bootstrap</a>-->
       <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -193,18 +193,19 @@
   </footer>
   <!-- END FOOTER -->
   <script>
-    (function scrollTop() {
-        var goUpBtn = document.getElementById('navId')
-        function setGoUpBtnVisibility(){
+    (function setNavHide() {
+        var navBar = document.getElementById('topNav')
+        function setNavHideVisibility(){
             if(window.scrollY >= 100){
-                goUpBtn.fadeOut();
+                navBar.fadeOut();
             }else{
-                goUpBtn.fadeIn();
+                navBar.fadeIn();
             }
         }
 
-        window.addEventListener('scroll',setGoUpBtnVisibility)
+        window.addEventListener('scroll',setNavHideVisibility)
     }())
+
 </script>
 </body>
 
